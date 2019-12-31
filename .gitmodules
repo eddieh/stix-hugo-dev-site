@@ -1,0 +1,3 @@
+[submodule "themes/stix"]
+	path = themes/stix
+	url = git@github.com:eddieh/stix-hugo.git
