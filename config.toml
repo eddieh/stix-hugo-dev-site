@@ -3,6 +3,7 @@ title = "Hugo Themes"
 author = "Steve Francia"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 theme = "stix"
+enableEmoji = true
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"

@@ -19,7 +19,8 @@ aliases = ["migrate-from-jekyl"]
 
 This article offers a sample of basic Markdown syntax that can be used
 in Hugo content files, also it shows whether basic HTML elements are
-decorated with CSS in a Hugo theme.  <!--more-->
+decorated with CSS in a Hugo theme.
+<!--more-->
 
 ## Headings
 
@@ -94,8 +95,7 @@ supports them out-of-the-box.
 
 #### Code block with backticks
 
-```
-html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,6 +121,7 @@ html
     </html>
 
 #### Code block with Hugo's internal highlight shortcode
+
 {{< highlight html >}}
 <!DOCTYPE html>
 <html lang="en">
@@ -150,9 +151,15 @@ html
 
 #### Nested list
 
-* Item
-1. First Sub-item
-2. Second Sub-item
+* Item A
+  1. First Sub-item
+  2. Second Sub-item
+* Item B
+  1. Sub-item one
+  2. Sub-item two
+     * Sub-sub-item A
+     * Sub-sub-item B
+     * Sub-sub-item C
 
 ## Other Elements — abbr, sub, sup, kbd, mark
 
