@@ -1,6 +1,7 @@
 #+TITLE: Org-mode Syntax Guide
 #+DATE: 2020-01-01T07:51:20-08:00
 #+DRAFT: true
+#+STARTUP: showall
 
 This article offers a sample of basic Org syntax that can be used
 in Hugo content files, also it shows whether basic HTML elements are
@@ -223,17 +224,23 @@ them out-of-the-box.
    :CUSTOM_ID: other-elements-abbr-sub-sup-kbd-mark
    :END:
 
-GIF is a bitmap image format.
 
-H2O
+#+BEGIN_EXPORT html
+<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap
+image format.</p>
+#+END_EXPORT
 
-Xn + Yn = Zn
+H_{2}O
 
-Press CTRL+ALT+Delete to end the session.
+X^{n} + Y^{n} = Z^{n}
+
+#+BEGIN_EXPORT html
+<p>Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end
+the session.</p>
+#+END_EXPORT
 
 Most salamanders are nocturnal, and hunt for insects, worms, and other
 small creatures.
 
-[fn:1] The above quote is excerpted from Rob Pike's
-       [[https://www.youtube.com/watch?v=PAAkCSZUG1c][talk]] during
+[fn:1] The above quote is excerpted from Rob Pike's [[https://www.youtube.com/watch?v=PAAkCSZUG1c][talk]] during
        Gopherfest, November 18, 2015.
