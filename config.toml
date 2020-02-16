@@ -28,7 +28,11 @@ series = "series"
 
 
 [params]
+title = "STIX Theme for Hugo"
 Tagline = "Development Site"
+description = "Development site for the STIX-Hugo theme."
+images = [""]
+
 
 
 [privacy]

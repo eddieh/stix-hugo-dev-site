@@ -1,6 +1,14 @@
 #+TITLE: Org-mode Syntax Guide
 #+DATE: 2020-01-01T07:51:20-08:00
-#+DRAFT: true
+#+AUTHOR: Hugo Authors
+#+DESCRIPTION: Sample article showcasing Org syntax and formatting.
+#+TAGS[]: org css html themes
+#+CATEGORIES[]: themes syntax
+#+SERIES[]: "Themes Guid"
+#+IMAGES[]:
+#+VIDEOS[]:
+#+AUDIO[]:
+#+DRAFT: false
 #+STARTUP: showall
 
 This article offers a sample of basic Org syntax that can be used

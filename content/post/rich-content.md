@@ -1,13 +1,19 @@
 +++
-author = "Hugo Authors"
 title = "Rich Content"
 date = "2019-03-10"
+author = "Hugo Authors"
 description = "A brief description of Hugo Shortcodes"
 tags = [
     "shortcodes",
     "privacy",
 ]
+series = []
+images = [""]
+videos = []
+audio = []
+draft = false
 +++
+
 
 Hugo ships with several [Built-in
 Shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes)
