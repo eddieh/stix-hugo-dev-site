@@ -2,7 +2,6 @@
 title = "Hugo Environment"
 description = "Prints out all the variables"
 date = "2020-02-15"
-aliases = []
 author = "Hugo Authors"
 draft = true
 +++

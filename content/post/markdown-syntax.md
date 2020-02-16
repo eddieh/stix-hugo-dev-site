@@ -14,7 +14,6 @@ categories = [
     "syntax",
 ]
 series = ["Themes Guide"]
-aliases = ["migrate-from-jekyl"]
 images = [""]
 videos = []
 audio = []

@@ -1,4 +1,3 @@
-baseURL = "https://gohugo.io"
 title = "STIX Theme"
 author = "Eddie Hillenbrand"
 copyright = "Copyright © 2020 Eddie Hillenbrand"
@@ -10,6 +9,10 @@ languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
+
+# assumes stix-hugo is a submodule of this repo
+baseURL = "https://eddieh.github.io/stix-hugo/"
+publishDir = "themes/stix/docs"
 
 
 [menu]
@@ -31,8 +34,7 @@ series = "series"
 title = "STIX Theme for Hugo"
 Tagline = "Development Site"
 description = "Development site for the STIX-Hugo theme."
-images = [""]
-
+images = ["assets/STIX4HugoHero.png"]
 
 
 [privacy]
