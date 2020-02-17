@@ -10,8 +10,10 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
-# assumes stix-hugo is a submodule of this repo
+# must end with a trialing "/"
 baseURL = "https://eddieh.github.io/stix-hugo/"
+
+# assumes stix-hugo is a submodule of this repo
 publishDir = "themes/stix/docs"
 
 
