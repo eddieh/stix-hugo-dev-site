@@ -4,7 +4,7 @@
 #+DESCRIPTION: Sample article showcasing Org syntax and formatting.
 #+TAGS[]: org css html themes
 #+CATEGORIES[]: themes syntax
-#+SERIES[]: "Themes Guid"
+#+SERIES[]: "Themes Guide"
 #+IMAGES[]:
 #+VIDEOS[]:
 #+AUDIO[]:
