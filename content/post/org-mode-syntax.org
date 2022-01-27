@@ -108,8 +108,8 @@ and abbreviations.
    :CUSTOM_ID: tables
    :END:
 
-Tables aren't part of the core Org spec, but Hugo supports supports
-them out-of-the-box.
+Beautiful book like tables.
+
 
 | Name    | Age   |
 |---------+-------|

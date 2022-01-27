@@ -1,0 +1,23 @@
+#+TITLE: STIX Theme for Hugo
+#+DATE: 2022-01-26T12:32:32-08:00
+#+AUTHOR:
+#+DESCRIPTION:
+#+TAGS[]:
+#+SERIES[]:
+#+IMAGES[]:
+#+VIDEOS[]:
+#+AUDIO[]:
+
+* STIX Theme for Hugo
+
+_{unofficial} Scientific and Technical Information Exchange (STIX)
+theme for Hugo. The theme uses the [[https://www.stixfonts.org][STIX Fonts]] for body text (hence the
+theme's name), Helvetica for headings, [[https://dejavu-fonts.github.io][DejaVu Sans Mono for code]], and
+[[https://katex.org][KaTeX for math]].
+
+The goal is to create a simple theme for Hugo specifically made for
+technical blogs and homepages.
+
+View the [[https://github.com/eddieh/stix-hugo][STIX Theme for Hugo on GitHub]].
+
+-----
