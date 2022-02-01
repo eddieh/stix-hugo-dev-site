@@ -16,6 +16,9 @@ baseURL = "https://eddieh.github.io/stix-hugo/"
 # assumes stix-hugo is a submodule of this repo
 publishDir = "themes/stix/docs"
 
+[markup]
+[markup.highlight]
+noClasses = false
 
 [menu]
 
@@ -37,6 +40,9 @@ title = "STIX Theme for Hugo"
 Tagline = "Development Site"
 description = "Development site for the STIX-Hugo theme."
 images = ["assets/STIX4HugoHero.png"]
+
+# selfhost, cdn
+fonts = "selfhost"
 
 
 [privacy]

@@ -131,41 +131,128 @@ Beautiful book like tables.
    :CUSTOM_ID: code-blocks
    :END:
 
-**** Code block with backticks
-     :PROPERTIES:
-     :CUSTOM_ID: code-block-with-backticks
+**** Source block displaying HTML
+:PROPERTIES:
+     :CUSTOM_ID: source-block-displaying-html
      :END:
 
 #+BEGIN_SRC html
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
 #+END_SRC
 
-**** Code block indented with four spaces
+**** Source block displaying Elisp
+:PROPERTIES:
+:CUSTOM_ID: source-block-displaying-elisp
+:END:
+
+#+BEGIN_SRC emacs-lisp
+(defun mccarthy91 (n)
+   "McCarthy 91 is used as a formal verification test case."
+   (if (<= n 100)
+       (mccarthy91 (mccarthy91 (+ n 11)))
+     (- n 10)))
+#+END_SRC
+
+**** Source block with C from NetBSD
+
+#+begin_src C
+#define	KSTACK_MAGIC	0xdeadbeaf
+
+/* XXX should be per process basis? */
+static int	kstackleftmin = KSTACK_SIZE;
+static int	kstackleftthres = KSTACK_SIZE / 8;
+
+void
+kstack_setup_magic(const struct lwp *l)
+{
+	uint32_t *ip;
+	uint32_t const *end;
+
+	KASSERT(l != NULL);
+	KASSERT(l != &lwp0);
+
+	/*
+	 * fill all the stack with magic number
+	 * so that later modification on it can be detected.
+	 */
+	ip = (uint32_t *)KSTACK_LOWEST_ADDR(l);
+	end = (uint32_t *)((char *)KSTACK_LOWEST_ADDR(l) + KSTACK_SIZE);
+	for (; ip < end; ip++) {
+		*ip = KSTACK_MAGIC;
+	}
+}
+#+end_src
+
+
+**** More C from NetBSD
+#+begin_src C
+/*
+ * kthread_fpu_enter()
+ *
+ *	Allow the current lwp, which must be a kthread, to use the FPU.
+ *	Return a cookie that must be passed to kthread_fpu_exit when
+ *	done.  Must be used only in thread context.  Recursive -- you
+ *	can call kthread_fpu_enter several times in a row as long as
+ *	you pass the cookies in reverse order to kthread_fpu_exit.
+ */
+int
+kthread_fpu_enter(void)
+{
+	struct lwp *l = curlwp;
+	int s;
+
+	KASSERTMSG(!cpu_intr_p(),
+	    "%s is not allowed in interrupt context", __func__);
+	KASSERTMSG(!cpu_softintr_p(),
+	    "%s is not allowed in interrupt context", __func__);
+
+	/*
+	 * Remember whether this thread already had FPU access, and
+	 * mark this thread as having FPU access.
+	 */
+	lwp_lock(l);
+	KASSERTMSG(l->l_flag & LW_SYSTEM,
+	    "%s is allowed only in kthreads", __func__);
+	s = l->l_flag & LW_SYSTEM_FPU;
+	l->l_flag |= LW_SYSTEM_FPU;
+	lwp_unlock(l);
+
+	/* Take MD steps to enable the FPU if necessary.  */
+	if (s == 0)
+		kthread_fpu_enter_md();
+
+	return s;
+}
+#+end_src
+
+** Other blocks
+
+**** Example block
      :PROPERTIES:
-     :CUSTOM_ID: code-block-indented-with-four-spaces
+     :CUSTOM_ID: example-block
      :END:
 
-#+BEGIN_SRC text
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-  </html>
-#+END_SRC
+#+begin_example
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+#+end_example
 
 **** Code block with Hugo's internal highlight shortcode
      :PROPERTIES:
