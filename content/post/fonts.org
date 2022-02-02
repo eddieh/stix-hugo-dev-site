@@ -7,11 +7,12 @@
 #+IMAGES[]:
 #+VIDEOS[]:
 #+AUDIO[]:
-#+DRAFT: true
 
 * Body Fonts
 
-Body text in STIX Fonts.
+Body text in STIX Fonts. The STIX "fonts are intended to satisfy the
+demanding needs of authors, publishers, printers, and others working
+in the scientific, medical, and technical fields."
 
 ** Formatting
 
@@ -25,7 +26,9 @@ something =monospaced= use ~=monospaced=~ or =~monospaced~=.
 
 Text characters set below or above the line of type for a font/size
 combination are necessary for technical writing. Subscripts and
-superscripts are achieved in the same way as in TeX or LaTeX.
+superscripts are achieved in the same way as in TeX or LaTeX. Use
+=_{subscript text}= for subscript and =^{superscript text}= for
+superscript.
 
 The radius of the sun is R_{sun} = 6.96 \times 10^{8} m.  On the other
 hand, the radius of Alpha Centauri is R_{Alpha Centauri} = 1.28 \times
@@ -50,6 +53,12 @@ Some other symbols include \copy as =\copy=, \dag as =\dag=, and
 =\frac12= and there's \frac34 as =\frac34=. There's x \to \infin,
 typed as =x \to \infin=. Don't forget the en dash -- or the em dash
 ---, respectively =--= and =---=.
+
+A large centered =\lambda= using =#+ATTR_HTML: :class text-center font-size-lg=
+#+ATTR_HTML: :class text-center font-size-lg
+#+begin_lead
+\lambda
+#+end_lead
 
 * Heading Fonts
 
@@ -101,6 +110,13 @@ Now we must check how a code block that overflows looks.
 #+BEGIN_SRC objc
 + (nullable NSURL *)URLForResource:(nullable NSString *)name withExtension:(nullable NSString *)ext subdirectory:(nullable NSString *)subpath inBundleWithURL:(NSURL *)bundleURL API_AVAILABLE(macos(10.6), ios(4.0), watchos(2.0), tvos(9.0));
 #+END_SRC
+
+Code with formatting
+
+#+begin_pre
+Something *bold*, something /italic/, some Greek \lambda, some math
+x^{3}, a \le b^{2} \plus C, and subscripts_{i} too.
+#+end_pre
 
 * More on the STIX Fonts
 
