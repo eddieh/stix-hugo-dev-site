@@ -23,11 +23,18 @@ noClasses = false
 [menu]
 
 [[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+pre = ""
+weight = 10
+
+[[menu.main]]
 identifier = "about"
 name = "About"
 url = "/about/"
-weight = 10
-
+pre = "|"
+weight = 20
 
 [taxonomies]
 category = "categories"
