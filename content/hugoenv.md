@@ -9,7 +9,7 @@ draft = true
 ## Raw
 
 {{< hugoenv.inline >}}
-<pre>{{ printf "%#v" .Page.Site }}</pre>
+<pre><code>{{ printf "%#v" .Page.Site }}</code></pre>
 {{< /hugoenv.inline >}}
 
 ---
