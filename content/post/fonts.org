@@ -142,7 +142,9 @@ free to every scientist, student, and other interested party
 worldwide. The fonts would be consistent with the emerging Unicode
 standard, and would permit universal representation of every
 character. With the release of the STIX fonts, de Ruiter's vision has
-been realized. --- STIX 1.1.0 STIXGeneral.otf
+been realized.
+
+@@html: <span class="attribution">&mdash; STIX 1.1.0 STIXGeneral.otf</span>@@
 #+end_quote
 
 The description of the STIX Font embeded in the v2.x font files is as
@@ -155,6 +157,31 @@ printers, and others working in the scientific, medical, and technical
 fields. They combine a comprehensive Unicode-based collection of
 mathematical symbols and alphabets with a set of text faces suitable
 for professional publishing. The fonts are available royalty-free
-under the SIL Open Font License. --- STIX 2.13 b170
-STIXTwoText-Regular.otf
+under the SIL Open Font License.
+
+@@html: <span class="attribution">&mdash; STIX 2.13 b170 STIXTwoText-Regular.otf</span>@@
+#+end_quote
+
+* More on DejaVu Sans Mono
+
+The lede paragraph from the DejaVu fonts webpage follows:
+
+#+begin_quote
+The DejaVu fonts are a font family based on the Vera Fonts. Its
+purpose is to provide a wider range of characters while maintaining
+the original look and feel through the process of collaborative
+development (see authors), under a Free license.
+
+@@html: <span class="attribution">&mdash; https://dejavu-fonts.github.io</span>@@
+#+end_quote
+
+A quote from [[https://en.wikipedia.org/wiki/DejaVu_fonts#DejaVu_Sans_Mono][Wikipedia]] follows:
+
+#+begin_quote
+The DejaVu Sans Mono typeface in particular is suitable for technical
+contexts, since it clearly distinguishes "l" (lowercase L) from "1"
+(one) and from "I" (uppercase i); also it clearly distinguishes "0"
+(zero, null) from "O" (uppercase o).
+
+@@html: <span class="attribution">&mdash; Wikipedia</span>@@
 #+end_quote

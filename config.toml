@@ -13,7 +13,7 @@ footnoteReturnLinkContents = "^"
 baseURL = "https://eddieh.github.io/stix-hugo/"
 
 # assumes stix-hugo is a submodule of this repo
-publishDir = "themes/stix/docs"
+# publishDir = "themes/stix/docs"
 
 [markup]
 [markup.highlight]
