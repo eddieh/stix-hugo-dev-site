@@ -335,9 +335,16 @@ the session.</p>
 #+END_EXPORT
 
 Most salamanders are nocturnal, and hunt for insects, worms, and other
-small creatures.
+small creatures.[fn:2]
 
 * Footnotes
 
 [fn:1] The above quote is excerpted from Rob Pike's [[https://www.youtube.com/watch?v=PAAkCSZUG1c][talk]] during
        Gopherfest, November 18, 2015.
+
+[fn:2] An especially long footnote to ensure the left margin does not
+cause overflow that pushes the paragraphs below the footnote number
+link-back.
+
+And now with multiple paragraphs---just to make sure this renders
+correctly.
